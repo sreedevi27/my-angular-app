@@ -24,6 +24,8 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, my-angular-app');
+    // AppComponent is a minimal shell that renders the router outlet.
+    // Assert the router outlet is present instead of checking for a specific heading.
+    expect(compiled.querySelector('router-outlet')).toBeTruthy();
   });
 });
