@@ -1,5 +1,5 @@
 import { importProvidersFrom } from '@angular/core';
-import {} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 /**
  * httpProviders
